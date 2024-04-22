@@ -18,10 +18,10 @@ class HomeScreen extends StatelessWidget {
             ),
           );
         },
-        child: const Icon(Icons.accessibility_new), // Hier das Icon des Buttons
+        child: const Icon(Icons.accessibility_new),
       ),
       appBar: AppBar(
-        title: const Text("Produkte"),
+        title: const Text("Produkte"),      
       ),
       body: const Center(
         child: Text(

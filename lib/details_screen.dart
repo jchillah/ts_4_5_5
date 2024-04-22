@@ -30,7 +30,7 @@ class DetailScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pop(context);
               },
-              icon: const Icon(Icons.arrow_back), // Specify the icon here
+              icon: const Icon(Icons.arrow_back),
               label: const Text("back"),
             )
           ],
