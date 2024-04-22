@@ -13,9 +13,7 @@ class HomeScreen extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) {
-                return const DetailScreen(
-                  price: 49.99,
-                );
+                return const DetailScreen(price: 49.99,);
               },
             ),
           );

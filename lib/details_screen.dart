@@ -21,10 +21,18 @@ class DetailScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              "Ein Hemd, das wirklich gut passt\n€$price",
+              "Ein Hemd, das wirklich gut passt\n$price€",
               textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 16),
             ),
+            const SizedBox(height: 20),
+            ElevatedButton.icon(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: const Icon(Icons.arrow_back), // Specify the icon here
+              label: const Text("back"),
+            )
           ],
         ),
       ),
