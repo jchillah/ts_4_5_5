@@ -7,22 +7,21 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton:
-    FloatingActionButton(
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) {
-              return const DetailScreen(
-                price: 49.99,
-              );
-            },
-          ),
-        );
-      },
-      child: const Icon(Icons.accessibility_new), // Hier das Icon des Buttons
-    ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) {
+                return const DetailScreen(
+                  price: 49.99,
+                );
+              },
+            ),
+          );
+        },
+        child: const Icon(Icons.accessibility_new), // Hier das Icon des Buttons
+      ),
       appBar: AppBar(
         title: const Text("Produkte"),
       ),
@@ -32,6 +31,5 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
     );
-    
   }
 }
